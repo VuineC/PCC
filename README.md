@@ -12,16 +12,19 @@ The provided files are all included within the zip files attached up there (`ei-
 # User Manual
 Here are step-by-step guide on how to use it.
 
-## 1 Upload the zip file into Arduino IDE
+## 1 Reset the Nicla Vision
+- This step isn't sequential but it's better to reset before working
+  
+## 2 Upload the zip file into Arduino IDE
 - Simply by going to Sketch -> Include Library -> Add .ZIP Library and then select `ei-parsley-vs-coriander-arduino.zip`.
 
-## 2 Reset the Nicla Vision
-- This step doesn't have to be after the upload but just in case the machine had other files within.
+## 3 Choose the uploaded file with the desired machine
+- Go to Files -> Examples -> parsley_vs_coriander_inferencing -> nicla_vison -> nicla_vision_camera and the script should open in front of you
   
-## 3 Verify and upload the sketch into the machine
+## 4 Verify and upload the sketch into the machine
 - You can do so from Arduino IDE's UI.
 
-## 4 Go to Serial Monitor (top left of the IDE's UI) and start classifying!
+## 5 Go to Serial Monitor (top left of the IDE's UI) and start classifying!
 - in Serial Monitor, you should be able to see the model's output being updated every 2 seconds (that's the default but you can change it however you want)
 
 # And there you have it! 
