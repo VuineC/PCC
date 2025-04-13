@@ -1,4 +1,5 @@
 # PCC: Parsley and Coriander Classifier
+## Created by: Waleed Albishri and Abdulrahamn Omar
 A tiny machine learning model for classifying parsley and coriander.
 
 This project was created as part of our TinyML workshop delivered by KAUST Academy.
