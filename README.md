@@ -6,20 +6,22 @@ This project was created as part of our TinyML workshop delivered by KAUST Acade
 The project was built upon Edge Impulse and then deployed on Arduino's Nicla Vision through OpenMV.
 
 # Provided files
-The provided files here are:
-1- `ei_image_classification.py` which is the python script ran in OpenMV and created automatically by Edge Impulse.
-2- `trained.tflite` which contains the model in TensorFlow Lite framework.
-3- `labels.txt` which contains the labels of the model (parsley and coriander).
-4- `edge_impulse_firmware_arduino_nicla_vision.bin` which contains the firmware bootloader for OpenMV.
+The provided files are all included within the zip files attached up there (`ei-parsley-vs-coriander-arduino.zip`)
+
 
 # User Manual
 Here are step-by-step guide on how to use it.
 
-## 1 Boot the bootloader in OpenMV
-- Download `edge_impulse_firmware_arduino_nicla_vision.bin` and run in on OpenMV (Tools -> Run a bootloader -> select the file)
+## 1 Upload the zip file into Arduino IDE
+- Simply by going to Sketch -> Include Library -> Add .ZIP Library and then select `ei-parsley-vs-coriander-arduino.zip`.
 
-## 2 Move the required files to the Nicla Vision
-- The files `trained_tflite` and `labels.txt` need to be in the Nicla Vision, so you must move them manually into the machine's storage through the file explorer.
+## 2 Reset the Nicla Vision
+- This step doesn't have to be after the upload but just in case the machine had other files within.
+  
+## 3 Verify and upload the sketch into the machine
+- You can do so from Arduino IDE's UI.
 
-## 3 Run the python script in OpenMV
-- Simply, run the `ei_image_classification.py` script in OpenMV and it should be able to classify between parsley and coriander successfully :)
+## 4 Go to Serial Monitor (top left of the IDE's UI) and start classifying!
+- in Serial Monitor, you should be able to see the model's output being updated every 2 seconds (that's the default but you can change it however you want)
+
+# And there you have it! 
